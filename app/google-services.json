@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "311524005832",
+    "project_id": "aid-donation",
+    "storage_bucket": "aid-donation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311524005832:android:82f8840c182066178652fd",
+        "android_client_info": {
+          "package_name": "com.khansaab.allinonedonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311524005832-rmqqpb3kdt8ed4mfksj2emomvrnhpik3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khansaab.allinonedonation",
+            "certificate_hash": "132c2bc6df9e5d9c62b642af161dc1d57f965188"
+          }
+        },
+        {
+          "client_id": "311524005832-cb1o9opkqfvf7bi7tm3sn398gfvsgkl3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGsH3HzolnuUenFY1CY-yj8sNa1zQbkH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311524005832-cb1o9opkqfvf7bi7tm3sn398gfvsgkl3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

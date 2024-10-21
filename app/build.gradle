@@ -1,0 +1,77 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.firebase.crashlytics)
+}
+
+android {
+    namespace 'com.khansaab.allinonedonation'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.khansaab.allinonedonation"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    /*compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }*/
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material.v1100
+    implementation libs.constraintlayout
+    implementation 'androidx.appcompat:appcompat-resources:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation libs.firebase.analytics
+    implementation libs.firebase.auth
+    implementation libs.firebase.database
+    implementation libs.firebase.storage
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    // Explicitly specifying Firebase Auth version 21.1.0
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+
+    // Explicitly specifying Firebase Database version 20.1.0
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+
+    // Explicitly specifying Firebase Storage version 20.1.0
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation libs.firebase.crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.3'
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation "com.google.android.gms:play-services-auth:21.2.0"
+
+
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+
+    implementation 'com.google.android.gms:play-services-maps:19.0.0'
+
+    implementation 'com.google.android.libraries.places:places:3.3.0'
+
+    implementation 'com.hbb20:ccp:2.7.0'
+    implementation libs.activity
+    testImplementation libs.junit
+    implementation 'junit:junit:4.13.2'
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
